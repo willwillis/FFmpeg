@@ -594,7 +594,7 @@ static int query_formats(AVFilterGraph *graph, void *log_ctx)
     if (count_delayed) {
         AVBPrint bp;
 
-        /* if count_queried > 0, one filter at least did set its formats,
+        /* if count_queried > 0, at least one filter set its formats,
            that will give additional information to its neighbour;
            if count_merged > 0, one pair of formats lists at least was merged,
            that will give additional information to all connected filters;
